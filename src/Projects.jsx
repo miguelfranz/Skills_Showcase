@@ -1,6 +1,9 @@
 
 import "./Projects.css";
 
+import barberImage from "./assets/proj2.png";
+import portfolioImage from "./assets/portf.png";
+
 const projects = [
     {
         number: "01",
@@ -9,7 +12,7 @@ const projects = [
         description:
             "A modern barber shop website designed to showcase barber services, pricing, and shop information through a clean and user-friendly interface.",
         tech: ["React", "CSS", "JavaScript"],
-        image: "/src/assets/proj2.png",
+        image: barberImage,
         link: "https://7200hairstudio.vercel.app",
     },
     {
@@ -19,7 +22,7 @@ const projects = [
         description:
             "A personal portfolio website that highlights my design skills, development projects, and experience in creating intuitive digital experiences.",
         tech: ["React", "CSS", "JavaScript"],
-        image: "/src/assets/portf.png",
+        image: portfolioImage,
         link: "https://miguelfrancisco.vercel.app",
     },
 ];
@@ -28,9 +31,7 @@ function Projects() {
     return (
         <section className="projects-section" id="projects">
             <div className="projects-heading">
-                <h2>
-                    My Works
-                </h2>
+                <h2>My Works</h2>
                 <p>
                     A selection of websites and digital experiences
                     I've designed and developed.
@@ -45,7 +46,9 @@ function Projects() {
                                 src={project.image}
                                 alt={`${project.title} project preview`}
                             />
-                            <span className="project-number">{project.number}</span>
+                            <span className="project-number">
+                                {project.number}
+                            </span>
                         </div>
 
                         <div className="project-info">
@@ -58,24 +61,20 @@ function Projects() {
 
                             <div className="tech-stack">
                                 {project.tech.map((technology) => (
-                                    <span key={technology}>{technology}</span>
+                                    <span key={technology}>
+                                        {technology}
+                                    </span>
                                 ))}
                             </div>
 
-                            {project.link ? (
-                                <a
-                                    className="project-link"
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    View Project <span>↗</span>
-                                </a>
-                            ) : (
-                                <span className="project-link project-placeholder">
-                                    Add project link ↗
-                                </span>
-                            )}
+                            <a
+                                className="project-link"
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Project <span>↗</span>
+                            </a>
                         </div>
                     </article>
                 ))}
