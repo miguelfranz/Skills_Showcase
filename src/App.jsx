@@ -4,6 +4,7 @@ import "./App.css";
 import "./Theme.css";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import miguelImage from "./assets/miguel.png";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -27,9 +28,7 @@ function App() {
         </a>
 
         <div className="nav-links">
-          <a href="#home" className="active">
-            Home
-          </a>
+          <a href="#home" className="active">Home</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -45,7 +44,6 @@ function App() {
           >
             <span className="theme-toggle-knob">
               {theme === "dark" ? (
-              
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     d="M19 15.5A8 8 0 0 1 8.5 5a8.5 8.5 0 1 0 10.5 10.5Z"
@@ -53,7 +51,6 @@ function App() {
                   />
                 </svg>
               ) : (
-               
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <circle cx="12" cy="12" r="4" fill="currentColor" />
                   <path
@@ -71,15 +68,12 @@ function App() {
 
       <main className="hero" id="home">
         <section className="hero-content">
+          <h2>Hi! I'm Carlos Miguel Francisco</h2>
 
-          <h2>
-            Hi! Im Carlos Miguel Francisco
-          </h2>
           <p className="bio">
-            I'm a Computer Science student and UI/UX designer and a Frontend Developer,
-            passionate about creating intuitive interfaces,
-            thoughtful user experiences, and meaningful
-            digital products.
+            I'm a Computer Science student, UI/UX designer, and Frontend
+            Developer, passionate about creating intuitive interfaces,
+            thoughtful user experiences, and meaningful digital products.
           </p>
 
           <div className="hero-buttons">
@@ -96,7 +90,7 @@ function App() {
             <a
               href="https://github.com/miguelfranz"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               GITHUB ↗
             </a>
@@ -104,7 +98,7 @@ function App() {
             <a
               href="https://www.linkedin.com/in/carlos-miguel-francisco-01a36a324/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               LINKEDIN ↗
             </a>
@@ -114,13 +108,12 @@ function App() {
         <section className="hero-visual" aria-label="Profile">
           <div className="orbit orbit-one"></div>
           <div className="orbit orbit-two"></div>
-
           <div className="profile-glow"></div>
 
           <div className="profile-frame">
             <img
-              src="/src/assets/miguel.png"
-              alt="My profile"
+              src={miguelImage}
+              alt="Carlos Miguel Francisco"
               className="profile-image"
             />
           </div>
@@ -149,7 +142,6 @@ function App() {
 
       <Projects />
       <Contact />
-
     </div>
   );
 }
