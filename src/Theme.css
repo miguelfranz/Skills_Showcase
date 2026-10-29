@@ -1,0 +1,100 @@
+
+:root[data-theme="light"] body {
+  background: #f5f5fa;
+  color: #242131;
+}
+
+:root[data-theme="light"] .portfolio {
+  color: #242131;
+}
+
+:root[data-theme="light"] .navbar,
+:root[data-theme="light"] .footer,
+:root[data-theme="light"] .projects-section,
+:root[data-theme="light"] .contact-section {
+  border-color: #17112b18;
+}
+
+:root[data-theme="light"] .nav-links a {
+  color: #686477;
+}
+
+:root[data-theme="light"] .nav-links a:hover,
+:root[data-theme="light"] .nav-links .active {
+  color: #29213b;
+}
+
+:root[data-theme="light"] .nav-button,
+:root[data-theme="light"] .secondary-button,
+:root[data-theme="light"] .theme-toggle {
+  border-color: #17112b25;
+  color: #29213b;
+}
+
+:root[data-theme="light"] .eyebrow,
+:root[data-theme="light"] .project-card,
+:root[data-theme="light"] .contact-container {
+  background: #ffffff;
+  border-color: #17112b15;
+}
+
+:root[data-theme="light"] .bio,
+:root[data-theme="light"] .projects-heading p,
+:root[data-theme="light"] .project-info p,
+:root[data-theme="light"] .contact-heading > p,
+:root[data-theme="light"] .contact-info > p {
+  color: #696477;
+}
+
+:root[data-theme="light"] .project-info h3,
+:root[data-theme="light"] .contact-info h3 {
+  color: #29213b;
+}
+
+:root[data-theme="light"] .tech-stack span {
+  background: #f0edf8;
+  color: #51466b;
+  border-color: #e5def2;
+}
+
+:root[data-theme="light"] .form-group label {
+  color: #393149;
+}
+
+:root[data-theme="light"] .form-group input,
+:root[data-theme="light"] .form-group textarea {
+  background: #f8f7fc;
+  color: #29213b;
+  border-color: #ded9e9;
+}
+
+:root[data-theme="light"] .form-group input::placeholder,
+:root[data-theme="light"] .form-group textarea::placeholder {
+  color: #8d879d;
+}
+
+:root[data-theme="light"] .contact-detail p {
+  color: #393149;
+}
+
+:root[data-theme="light"] .footer,
+:root[data-theme="light"] .social-links a,
+:root[data-theme="light"] .form-note {
+  color: #777184;
+}
+
+:root[data-theme="light"] .secondary-button:hover,
+:root[data-theme="light"] .theme-toggle:hover {
+  background: #eae5f5;
+}
+
+:root[data-theme="light"] .design-card,
+:root[data-theme="light"] .code-card {
+  background: #ffffffed;
+  border-color: #17112b20;
+  color: #29213b;
+}
+
+:root[data-theme="light"] .floating-card small {
+  color: #777184;
+}
